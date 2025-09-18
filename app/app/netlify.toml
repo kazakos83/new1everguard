@@ -1,7 +1,8 @@
 
 [build]
-  command = "yarn build"
-  publish = ".next"
+  base = "app"
+  publish = "app/out"
+  command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
